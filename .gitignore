@@ -4,3 +4,6 @@
 # Inspiration
 Inspiration.docx
 *.docx
+
+# Challenge prompt folder
+/challenge
