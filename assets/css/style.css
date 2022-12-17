@@ -39,6 +39,7 @@ nav a {
 
 a:link {
     color:var(--light-color);
+    text-decoration:none;
 }
 
 a:visited {
@@ -47,6 +48,7 @@ a:visited {
 
 nav a:visited {
     color:var(--light-color);
+    text-decoration:none;
 }
 
 a:hover {
@@ -57,10 +59,10 @@ nav a:hover {
     color:var(--main-accent-color);
 }
 
-nav a:active {
+/* nav a:active {
     color:var(--other-accent-color);
     border-bottom:3px solid var(--other-accent-color);
-}
+} */
 
 .link-to {
     padding:60px 25px 25px 25px;
@@ -126,6 +128,22 @@ p {
     font-weight:600;
     color:var(--other-accent-color);
 }
+
+#projects {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+h3 {
+    font-size:140%;
+    font-style:italic;
+    line-height:1.5;
+    padding-bottom:5px;
+    text-decoration:none;
+    color:var(--medium-color);
+}
+
 
 @media screen and (max-width:1000px) {
     body {
