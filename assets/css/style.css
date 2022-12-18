@@ -190,6 +190,16 @@ h3 {
     margin-top:3px;
 }
 
+#contact ul {
+    margin-left:4ch;
+    line-height:1.7;
+    list-style:none;
+}
+
+.contact-icon {
+    font-size:160%;
+}
+
 a:link {
     color:var(--light-color);
     text-decoration:none;
