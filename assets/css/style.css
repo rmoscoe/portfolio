@@ -6,6 +6,11 @@
     --other-accent-color:#b62029;
     --main-accent--translucent:rgba(43, 133, 70,.7);
     --featured-accent-translucent:rgba(35, 40, 44.7);
+    --light-semi-transparent:rgba(234, 237, 240,.2);
+}
+
+html {
+    scroll-behavior:smooth;
 }
 
 body {
@@ -22,6 +27,7 @@ header {
     background-color:var(--background-dark);
     box-shadow:2px 2px 5px #14171a;
     z-index:10;
+    scroll-behavior:smooth !important;
 }
 
 nav {
@@ -108,27 +114,24 @@ p {
 #projects {
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-evenly;
-    gap:3%;
-    /* row-gap: 3%; */
-    align-items:space-evenly;
+    justify-content:space-between;
 }
 
 .featured-project {
-    flex:2 1 600px;
-    display:inline;
-    width:100%;
+    flex:0 1 calc(50% - 1em);
+    /* display:inline; */
+    /* width:100%; */
     background-color:var(--main-accent-color);
     border:2px solid var(--light-color);
-    margin-bottom:3%;
+    margin-bottom:1em;
 }
 
 .project {
-    flex:1 1 300px;
-    display:inline;
-    width:50%;
+    flex:0 1 calc(25% - 1em);
+    /* display:inline; */
+    /* width:50%; */
     border:2px solid var(--main-accent-color);
-    margin-bottom:3%;
+    margin-bottom:1em;
 }
 
 h3 {
@@ -233,8 +236,7 @@ nav a:hover {
     color:var(--main-accent-color);
 }
 
-
-@media screen and (max-width:1000px) {
+@media screen and (max-width:768px) {
     body {
         font-size:18px;
     }
@@ -245,5 +247,31 @@ nav a:hover {
 
     #headline {
         font-size:170%;
+    }
+
+    .featured-project {
+        flex:0,1,100%;
+    }
+    
+    .project {
+        flex:0,1,calc(50% - 1em);
+    }
+
+    footer p {
+        font-size:14px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #projects {
+        display:block;
+    }
+
+    .featured-project a img {
+        width:100%;
+    }
+
+    .project a img {
+        width:50%;
     }
 }
