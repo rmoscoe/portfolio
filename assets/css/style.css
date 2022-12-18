@@ -200,6 +200,17 @@ h3 {
     font-size:160%;
 }
 
+footer {
+    background-color:var(--main-accent-color);
+    margin-top:3%;
+}
+
+footer p {
+    text-align:center;
+    color:var(--light-color);
+    font-size:1.4vw;
+}
+
 a:link {
     color:var(--light-color);
     text-decoration:none;
