@@ -119,8 +119,6 @@ p {
 
 .featured-project {
     flex:0 1 calc(50% - 1em);
-    /* display:inline; */
-    /* width:100%; */
     background-color:var(--main-accent-color);
     border:2px solid var(--light-color);
     margin-bottom:1em;
@@ -250,11 +248,11 @@ nav a:hover {
     }
 
     .featured-project {
-        flex:0,1,100%;
+        flex: 0 1 100%;
     }
     
     .project {
-        flex:0,1,calc(50% - 1em);
+        flex: 0 1 calc(50% - 1em);
     }
 
     footer p {
