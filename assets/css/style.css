@@ -1,3 +1,4 @@
+/* Assigning theme colors to variables. */
 :root {
     --background-dark:#23282c;
     --light-color:#eaedf0;
@@ -5,22 +6,24 @@
     --main-accent-color:#2b8546;
     --other-accent-color:#b62029;
     --main-accent--translucent:rgba(43, 133, 70,.7);
-    --featured-accent-translucent:rgba(35, 40, 44.7);
-    --light-semi-transparent:rgba(234, 237, 240,.2);
+    --featured-accent-translucent:rgba(35, 40, 44, .7);
+    --light-semi-transparent:rgba(234, 237, 240, .2);
 }
 
 html {
     scroll-behavior:smooth;
 }
 
+/* Creating a basic theme for the page */
 body {
     background-color:var(--background-dark);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:var(--medium-color);
-    font-size:1.65vw;
+    font-size:1.7vw;
     line-height:1.4;
 }
 
+/* The nav bar should remain at the top of the screen. The links should be left-aligned and spaced out. */
 header {
     position:fixed;
     width:100%;
@@ -46,6 +49,7 @@ nav a {
     
 }
 
+/* Because the nav bar is fixed, each section needs extra padding at the top so the heading doesn't get covered by the nav bar. */
 .link-to {
     padding:60px 25px 25px 25px;
 }
@@ -83,7 +87,7 @@ aside p {
 }
 
 #headline {
-    font-size:190%;
+    font-size:185%;
     padding-top:1%;
     padding-bottom:7%;
     border-bottom:4px solid var(--main-accent-color);
@@ -111,6 +115,7 @@ p {
     color:var(--other-accent-color);
 }
 
+/* Creating a flexbox layout for the work projects, keeping the first (featured) project twice the width of the remaing ones, while allowing the sections to scale and wrap as needed. */
 #projects {
     display:flex;
     flex-wrap:wrap;
@@ -123,15 +128,15 @@ p {
     border:2px solid var(--light-color);
     margin-bottom:1em;
     margin-right:1em;
+    overflow:hidden;
 }
 
 .project {
     flex:0 1 calc(25% - 1.5em);
-    /* display:inline; */
-    /* width:50%; */
     border:2px solid var(--main-accent-color);
     margin-bottom:1em;
     margin-right:1em;
+    overflow:hidden;
 }
 
 h3 {
@@ -148,6 +153,8 @@ h3 {
     border-radius:2px;
     transform:translateY(25%);
     border-bottom:3px solid var(--other-accent-color);
+    z-index:2;
+    position:relative;
 }
 
 .featured-project h3 {
@@ -155,16 +162,18 @@ h3 {
 }
 
 .featured-project a, .project a {
-    /* flex:2 1 auto; */
     z-index:1;
 }
 
-.featured-project a img , .project a img {
-    flex:1 1 auto;
-    /* width:70%;
-    max-height:calc(100% - 48px); */
+.image-container {
+    background-color: var(--light-color);
+    width:90%;
+    font-size:0;
+    line-height:0;
+    position:relative;
 }
 
+/* Creting an overlay for the description and tech stack for each project that overlaps the image. */
 .details {
     flex:1 1 auto;
     width:80%;
@@ -174,14 +183,21 @@ h3 {
     z-index:2;
 }
 
+.featured-project .details {
+    margin-top:-13%;
+}
+
 .description {
     background-color:var(--main-accent--translucent);
-    padding:1%;
     font-size:smaller;
+    padding:1em;
+    color:var(--light-color);
+    text-align:left;
 }
 
 .featured-project .description {
     background-color:var(--featured-accent-translucent);
+    text-align:left;
 }
 
 .tech-stack {
@@ -190,7 +206,14 @@ h3 {
     flex-wrap:wrap;
     justify-content:flex-start;
     gap:10px;
-    margin-top:3px;
+    padding-top:3px;
+    font-size:smaller;
+    background-color: var(--featured-accent-translucent);
+}
+
+.featured-project .tech-stack {
+    padding-left:1em;
+    padding-right:1em;
 }
 
 #contact ul {
@@ -203,6 +226,7 @@ h3 {
     font-size:160%;
 }
 
+/* Styling the footer. */
 footer {
     background-color:var(--main-accent-color);
     margin-top:3%;
@@ -214,6 +238,7 @@ footer p {
     font-size:1.4vw;
 }
 
+/* Styling the various states for the links on the page. */
 a:link {
     color:var(--light-color);
     text-decoration:none;
@@ -236,6 +261,11 @@ nav a:hover {
     color:var(--main-accent-color);
 }
 
+.featured-project a:hover img, .project a:hover img {
+    opacity:0.7;
+}
+
+/* Using media queries to determine how many projects appear on each row based on the size of the screen and ensure the text on the page is large enough to read at any screen size. */
 @media screen and (max-width:768px) {
     body {
         font-size:18px;
