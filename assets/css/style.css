@@ -308,6 +308,10 @@ nav a:hover {
     }
 
     .project a img {
+        /* width:50%; */
+    }
+
+    .project a .image-container {
         width:50%;
     }
 }
