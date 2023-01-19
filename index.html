@@ -1,185 +1,295 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Ryan Moscoe</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>Ryan Moscoe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
 
-    <body>
-        <!-- The header will be persistent at the top of the page. -->
-        <header>
-            <!-- The nav bar will be aligned left and the links will be evenly spaced. -->
-            <nav>
-                <a href="#">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+<body>
+    <!-- The header will be persistent at the top of the page. -->
+    <header>
+        <!-- The nav bar will be aligned left and the links will be evenly spaced. -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <main>
-            <!-- The hero section will include my headshot, name, and a short summary. -->
-            <section id="hero">
-                <img src="./assets/images/Headshot_rectangular.jpg" id="headshot" width="30%" />
-                <aside id="hook">
-                    <h1>Ryan Moscoe</h1>
-                    <p id="headline">Software Engineer | Problem Solver | Ninja</p>
-                    <p>If you are looking for a coding ninja, look no further. I code in Java, Python, C, JavaScript, HTML, and CSS. In my spare time, I practice--you guessed it--ninjutsu.</p>
-                </aside>
-            </section>
+    <main>
+        <!-- The hero section will include my headshot, name, and a short summary. -->
+        <section id="hero">
+            <img src="./assets/images/Headshot_rectangular.jpg" id="headshot" width="30%" />
+            <aside id="hook">
+                <h1>Ryan Moscoe</h1>
+                <p id="headline">Software Engineer | Problem Solver | Ninja</p>
+                <p>If you are looking for a coding ninja, look no further. I code in Java, Python, C, JavaScript, HTML,
+                    and CSS. In my spare time, I practice--you guessed it--ninjutsu.</p>
+            </aside>
+        </section>
 
-            <!-- The About section will include a short bio and fun facts. -->
-            <section class="link-to" id="about">
-                <h2>About Me</h2>
-                <p>Although I am fairly new to programming, I have extensive professional experience in the talent development field and a master's degree in Leadership Studies, so I am not at all new to high achievement in a professional role. To hone my programming skills, I am currently completing a <span class="highlight">web development bootcamp through the University of California, Berkeley</span>.</p>
-                <p>For me, the transition from talent development to software engineering is quite natural. I taught myself the Basic programming language when I was eight years old, and I excelled at computer science in college. I also <span class="highlight">tutored symbolic logic</span> when I was in college. More recently, I began learning JavaScript so I could extend the capabilities of the elearning authoring software I used in my last role. In doing so, I discovered I still enjoyed coding and had a talent for it, and I continued learning additional programming languages and technologies such as Integrated Development Environments, the command line, Git, and GitHub.</p>
-                <p>When I'm not writing code, I enjoy tabletop gaming and martial arts. I currently practice <span class="contrast">ninjutsu</span>.</p>
-            </section>
+        <!-- The About section will include a short bio and fun facts. -->
+        <section class="link-to" id="about">
+            <h2>About Me</h2>
+            <p>Although I am fairly new to programming, I have extensive professional experience in the talent
+                development field and a master's degree in Leadership Studies, so I am not at all new to high
+                achievement in a professional role. To hone my programming skills, I am currently completing a <span
+                    class="highlight">web development bootcamp through the University of California, Berkeley</span>.
+            </p>
+            <p>For me, the transition from talent development to software engineering is quite natural. I taught myself
+                the Basic programming language when I was eight years old, and I excelled at computer science in
+                college. I also <span class="highlight">tutored symbolic logic</span> when I was in college. More
+                recently, I began learning JavaScript so I could extend the capabilities of the elearning authoring
+                software I used in my last role. In doing so, I discovered I still enjoyed coding and had a talent for
+                it, and I continued learning additional programming languages and technologies such as Integrated
+                Development Environments, the command line, Git, and GitHub.</p>
+            <p>When I'm not writing code, I enjoy tabletop gaming and martial arts. I currently practice <span
+                    class="contrast">ninjutsu</span>.</p>
+        </section>
 
-            <!-- The Work section will include my work samples. -->
-            <section class="link-to" id="work">
-                <!-- Each work sample will feature:
+        <!-- The Work section will include my work samples. -->
+        <section class="link-to" id="work">
+            <!-- Each work sample will feature:
                     An image of the project beneath a heading with the name of the project
                     A box with a short description of the project that overlies the image
                     A list with the icons and names of the technologies used -->
-                <h2>Work</h2>
-                <div id="projects">
-                    <section class="featured-project" id="code-quiz-challenge">
-                        <a href="https://rmoscoe.github.io/code-quiz-challenge/" target="_blank">
-                            <h3>Code Quiz</h3>
-                            <div class="image-container" width="90%">
-                                <img src="./assets/images/Question.jpg" width="100%"/>
-                            </div>
-                        </a>
-                        <section class="details">
-                            <p class="description">This quiz presents the user with ten questions about JavaScript in a random order. The quiz has a time limit of 10 minutes, and the user's score is the number of seconds remaining when all questions are answered or time runs out.</p>
-                            <ul class="tech-stack">
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" height="18px"/>
-                                    <span class="tech">HTML</span>
-                                </li>
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" height="18px"/>
-                                    <span class="tech">CSS</span>
-                                </li>
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="18px"/>
-                                    <span class="tech">JavaScript</span>
-                                </li>
-                            </ul>
-                        </section>
+            <h2>Work</h2>
+            <div id="projects">
+                <section class="featured-project" id="code-quiz-challenge">
+                    <a href="https://rmoscoe.github.io/code-quiz-challenge/" target="_blank">
+                        <h3>Code Quiz</h3>
+                        <div class="image-container" width="90%">
+                            <img src="./assets/images/Question.jpg" width="100%" />
+                        </div>
+                    </a>
+                    <section class="details">
+                        <p class="description">This quiz presents the user with ten questions about JavaScript in a
+                            random order. The quiz has a time limit of 10 minutes, and the user's score is the number of
+                            seconds remaining when all questions are answered or time runs out.</p>
+                        <ul class="tech-stack">
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                                    height="18px" />
+                                <span class="tech">HTML</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                                    height="18px" />
+                                <span class="tech">CSS</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    height="18px" />
+                                <span class="tech">JavaScript</span>
+                            </li>
+                        </ul>
                     </section>
+                </section>
 
-                    <section class="project" id="aliens_vs_humans">
-                        <a href="https://github.com/rmoscoe/aliens_vs_humans" target="_blank">
-                            <h3>Aliens Vs. Humans</h3>
-                            <div class="image-container" width="90%">
-                                <img src="./assets/images/aliens_vs_humans.png" width="100%" />
-                            </div>
-                        </a>
-                        <section class="details">
-                            <p class="description">A simulation in the style of a tabletop roleplaying game based on a laser tag arena where I used to work. It programmatically generates a human character and an alien character and then simulates combat between them, describing the results through Standard Output.</p>
-                            <ul class="tech-stack">
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="18px" />
-                                    <span class="tech">Java</span>
-                                </li>
-                            </ul>
-                        </section>
+                <section class="project" id="aliens_vs_humans">
+                    <a href="https://github.com/rmoscoe/aliens_vs_humans" target="_blank">
+                        <h3>Aliens Vs. Humans</h3>
+                        <div class="image-container" width="90%">
+                            <img src="./assets/images/aliens_vs_humans.png" width="100%" />
+                        </div>
+                    </a>
+                    <section class="details">
+                        <p class="description">A simulation in the style of a tabletop roleplaying game based on a laser
+                            tag arena where I used to work. It programmatically generates a human character and an alien
+                            character and then simulates combat between them, describing the results through Standard
+                            Output.</p>
+                        <ul class="tech-stack">
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    height="18px" />
+                                <span class="tech">Java</span>
+                            </li>
+                        </ul>
                     </section>
+                </section>
 
-                    <section class="project" id="mixedMessages">
-                        <a href="https://rmoscoe.github.io/mixedMessages/" target="_blank">
-                            <h3>Mixed Messages</h3>
-                            <div class="image-container" width="90%">
-                                <img src="./assets/images/mixedMessages.jpg" width="100%" />
-                            </div>
-                        </a>
-                        <section class="details">
-                            <p class="description">A Shakespearean insult generator that assembles three randomly selected components to form an insult at the push of a button.</p>
-                            <ul class="tech-stack">
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" height="18px"/>
-                                    <span class="tech">HTML</span>
-                                </li>
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" height="18px"/>
-                                    <span class="tech">CSS</span>
-                                </li>
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="18px"/>
-                                    <span class="tech">JavaScript</span>
-                                </li>
-                            </ul>
-                        </section>
+                <section class="project" id="weather-dashboard">
+                    <a href="https://rmoscoe.github.io/weather-dashboard/" target="_blank">
+                        <h3>Weather Dashboard</h3>
+                        <div class="image-container" width="90%">
+                            <img src="./assets/images/Dashboard.jpg" width="100%" />
+                        </div>
+                    </a>
+                    <section class="details">
+                        <p class="description">View current weather conditions and a 5-day forecast for a city by
+                            searching or retrieving a saved search.</p>
+                        <ul class="tech-stack">
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                                    height="18px" />
+                                <span class="tech">HTML</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    height="18px" />
+                                <span class="tech">JavaScript</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
+                                    height="18px" />
+                                <span class="tech">jQuery</span>
+                            </li>
+                            <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" height="18px" />
+                                <span class="tech">Bootstrap</span>
+                            </li>
+                            <li>
+                                <span class="tech">Day.JS</span>
+                            </li>
+                        </ul>
                     </section>
+                </section>
 
-                    <section class="project" id="marketing-refactor">
-                        <a href="https://rmoscoe.github.io/marketing-refactor/" target="_blank">
-                            <h3>Marketing Refactor</h3>
-                            <div class="image-container" width="90%">
-                                <img src="./assets/images/Horiseon.jpg" width="100%"/>
-                            </div>
-                        </a>
-                        <section class="details">
-                            <p class="description">Horiseon, a <strong>fictitious</strong> marketing agency, requested a refactoring of its website to improve accessibility. This project included several improvements to the existing code.</p>
-                            <ul class="tech-stack">
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" height="18px"/>
-                                    <span class="tech">HTML</span>
-                                </li>
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" height="18px"/>
-                                    <span class="tech">CSS</span>
-                                </li>
-                            </ul>
-                        </section>
+                <section class="project" id="mixedMessages">
+                    <a href="https://rmoscoe.github.io/mixedMessages/" target="_blank">
+                        <h3>Mixed Messages</h3>
+                        <div class="image-container" width="90%">
+                            <img src="./assets/images/mixedMessages.jpg" width="100%" />
+                        </div>
+                    </a>
+                    <section class="details">
+                        <p class="description">A Shakespearean insult generator that assembles three randomly selected
+                            components to form an insult at the push of a button.</p>
+                        <ul class="tech-stack">
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                                    height="18px" />
+                                <span class="tech">HTML</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                                    height="18px" />
+                                <span class="tech">CSS</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    height="18px" />
+                                <span class="tech">JavaScript</span>
+                            </li>
+                        </ul>
                     </section>
+                </section>
 
-                    <section class="project" id="password-generator">
-                        <a href="https://rmoscoe.github.io/password-generator" target="_blank">
-                            <h3>Password Generator</h3>
-                            <div class="image-container" width="90%">
-                                <img src="./assets/images/Password.jpg" width="100%" />
-                            </div>
-                        </a>
-                        <section class="details">
-                            <p class="description">This app randomly generates a password according to criteria the user specifies.</p>
-                            <ul class="tech-stack">
-                                <li>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="18px"/>
-                                    <span class="tech">JavaScript</span>
-                                </li>
-                            </ul>
-                        </section>
+                <section class="project" id="marketing-refactor">
+                    <a href="https://rmoscoe.github.io/marketing-refactor/" target="_blank">
+                        <h3>Marketing Refactor</h3>
+                        <div class="image-container" width="90%">
+                            <img src="./assets/images/Horiseon.jpg" width="100%" />
+                        </div>
+                    </a>
+                    <section class="details">
+                        <p class="description">Horiseon, a <strong>fictitious</strong> marketing agency, requested a
+                            refactoring of its website to improve accessibility. This project included several
+                            improvements to the existing code.</p>
+                        <ul class="tech-stack">
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                                    height="18px" />
+                                <span class="tech">HTML</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                                    height="18px" />
+                                <span class="tech">CSS</span>
+                            </li>
+                        </ul>
                     </section>
-                </div>
-            </section>
+                </section>
 
-            <!-- The Contact section will include links to my email, LinkedIn, and Github. -->
-            <section class="link-to" id="contact">
-                <h2>Contact</h2>
-                <ul>
-                    <li>
-                        <a href="mailto:ryanmoscoe@gmail.com"><span class="contact-icon">&#9993</span>   ryanmoscoe@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ryan-moscoe-8652973/" target="_blank"><img src="./assets/images/LinkedIn-Logos/LI-In-Bug.png" height="21px" /><span class="contact-descr">   LinkedIn</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/rmoscoe" target="_blank"><img src="./assets/images/github-mark/github-mark-white.png" height="21px" >   GitHub</a>
-                    </li>
-                </ul>
-            </section>
-        </main>
+                <section class="project" id="reading-is-fun">
+                    <a href="https://justhenner.github.io/reading-is-fun/" target="_blank">
+                        <h3>Reading Is Fun</h3>
+                        <div class="image-container" width="90%">
+                            <img src="./assets/images/SearchResults.jpg" width="100%" />
+                        </div>
+                    </a>
+                    <section class="details">
+                        <p class="description">View information from Google Books and save favorites with this app.</p>
+                        <ul class="tech-stack">
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                                    height="18px" />
+                                <span class="tech">HTML</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                                    height="18px" />
+                                <span class="tech">CSS</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    height="18px" />
+                                <span class="tech">JavaScript</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg"
+                                    height="18px" />
+                                <span class="tech">Bulma</span>
+                            </li>
+                            <li>
+                                <span class="tech">UmbrellaJS</span>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
 
-        <footer>
-            <p>&copy 2022 Ryan Moscoe. Programming language icons courtesy of devicon.dev.</p>
-        </footer>
-    </body>
+                <section class="project" id="password-generator">
+                    <a href="https://rmoscoe.github.io/password-generator" target="_blank">
+                        <h3>Password Generator</h3>
+                        <div class="image-container" width="90%">
+                            <img src="./assets/images/Password.jpg" width="100%" />
+                        </div>
+                    </a>
+                    <section class="details">
+                        <p class="description">This app randomly generates a password according to criteria the user
+                            specifies.</p>
+                        <ul class="tech-stack">
+                            <li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    height="18px" />
+                                <span class="tech">JavaScript</span>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- The Contact section will include links to my email, LinkedIn, and Github. -->
+        <section class="link-to" id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>
+                    <a href="mailto:ryanmoscoe@gmail.com"><span class="contact-icon">&#9993</span>
+                        ryanmoscoe@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ryan-moscoe-8652973/" target="_blank"><img
+                            src="./assets/images/LinkedIn-Logos/LI-In-Bug.png" height="21px" /><span
+                            class="contact-descr"> LinkedIn</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/rmoscoe" target="_blank"><img
+                            src="./assets/images/github-mark/github-mark-white.png" height="21px"> GitHub</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy 2022 Ryan Moscoe. Programming language icons courtesy of devicon.dev.</p>
+    </footer>
+</body>
 
 </html>
